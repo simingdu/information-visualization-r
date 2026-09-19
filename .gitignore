@@ -1,0 +1,14 @@
+# Raw data
+data/*.csv
+
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio
+.Rproj.user/
+
+# Operating system files
+.DS_Store
+Thumbs.db
