@@ -21,7 +21,7 @@ My work focused on:
 
 ### Candidate Records by Office and Party
 
-I first compared candidate year records across House, Senate, and Presidential elections.
+I first compared candidate records across House, Senate, and Presidential elections.
 
 ![Candidate Records by Office and Party](images/candidate_records.png)
 
@@ -33,7 +33,7 @@ Next, I grouped total receipts by party and election year.
 
 ![Total Receipts by Party](images/receipts_by_year.png)
 
-This view focuses on aggregate totals across election cycles. Since totals can be strongly affected by large campaigns, I also wanted to look at the distribution of individual candidate year records.
+This view focuses on aggregate totals across election cycles. Since totals can be strongly affected by large campaigns, I also wanted to look at the distribution of individual candidate records.
 
 ### Distribution of Candidate Receipts
 
