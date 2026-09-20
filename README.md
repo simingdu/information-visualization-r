@@ -53,7 +53,7 @@ I created two examples using the same underlying dataset.
 
 ![Correct Receipts by Party](images/correct_receipts_by_party.png)
 
-This version includes election cycles from 2008 to 2020 and keeps the y axis anchored at zero.
+This version includes election cycles from 2008-2020 and keeps the y axis anchored at zero.
 
 #### Intentionally Misleading View
 
@@ -61,7 +61,7 @@ This version includes election cycles from 2008 to 2020 and keeps the y axis anc
 
 For this version, I changed several things:
 
-* limited the time period to 2008 to 2016
+* limited the time period to 2008-2016
 * truncated the y axis
 * removed later election cycles
 * used a title that encourages a stronger interpretation
@@ -110,7 +110,7 @@ The party comparisons in this project are used to study visualization design and
 
 ## Data
 
-The project uses Federal Election Commission candidate summary data for election cycles from 2008 to 2022.
+The project uses Federal Election Commission candidate summary data for election cycles from 2008-2022.
 
 The dataset used in the original coursework is documented in [`data/README.md`](data/README.md).
 
@@ -171,7 +171,7 @@ This is a descriptive visualization project rather than a causal analysis.
 
 A few things to keep in mind:
 
-* candidate finance values are highly skewed
+* campaign finance values are highly skewed
 * aggregate totals can be influenced by large campaigns
 * different filtering choices can change what is visible in a chart
 * the intentionally misleading charts are included only as visualization design examples

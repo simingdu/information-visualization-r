@@ -1,5 +1,6 @@
 library(ggplot2)
 library(dplyr)
+library(stringr)
 library(scales)
 
 # Load FEC candidate finance data
@@ -11,7 +12,7 @@ if ("X" %in% names(fec)) {
   fec$X <- NULL
 }
 
-# Keep Democratic and Republican candidate-year records
+# Keep Democratic and Republican candidate records
 major_parties <- fec %>%
   filter(Cand_Party_Affiliation %in% c("DEM", "REP"))
 
@@ -46,7 +47,7 @@ candidate_records_plot <- ggplot(
   labs(
     title = "Candidate Records by Office and Party",
     x = "Office",
-    y = "Number of Candidate-Year Records",
+    y = "Number of Candidate Records",
     fill = "Party"
   ) +
   theme_minimal()
@@ -64,13 +65,11 @@ ggsave(
 # 2. Total receipts by party across election years
 # ------------------------------------------------------------
 
-major_parties$Coverage_End_Date <- as.Date(
-  major_parties$Coverage_End_Date,
-  format = "%m/%d/%Y"
-)
-
-major_parties$Year <- as.numeric(
-  format(major_parties$Coverage_End_Date, "%Y")
+major_parties$Year <- as.integer(
+  str_extract(
+    major_parties$Link_Image,
+    "(?<=cycle=)\\d{4}"
+  )
 )
 
 election_years <- c(

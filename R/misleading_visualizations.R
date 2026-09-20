@@ -67,8 +67,8 @@ correct_receipts_plot <- ggplot(
     breaks = seq(2008, 2020, by = 2)
   ) +
   labs(
-    title = "Median Campaign Receipts by Party, 2008–2020",
-    subtitle = "Democratic and Republican candidate-year records with positive receipts",
+    title = "Median Campaign Receipts by Party, 2008-2020",
+    subtitle = "Democratic and Republican candidate records with positive receipts",
     x = "Election Cycle Year",
     y = "Median Total Receipts",
     color = "Party",
@@ -129,7 +129,7 @@ misleading_receipts_plot <- ggplot(
   ) +
   labs(
     title = "Democrats Appear to Have a Fundraising Advantage",
-    subtitle = "Median campaign receipts, 2008–2016",
+    subtitle = "Median campaign receipts, 2008-2016",
     x = "Election Cycle Year",
     y = "Median Total Receipts",
     color = "Party",
